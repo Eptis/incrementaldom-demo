@@ -11,7 +11,8 @@ var devConfig = merge(defaultConfig, {
     progress: true,
     plugins: [
       new webpack.NoErrorsPlugin()
-    ]
+    ],
+    host: "172.16.1.29",
   }
 });
 
