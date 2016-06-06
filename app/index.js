@@ -1,6 +1,7 @@
 import './styles/application.sass';
 import IncrementalDOM from 'incremental-dom';
 import Grapnel from 'Grapnel';
+import Gsap from 'gsap';
 
 var router = new Grapnel();
 
@@ -70,6 +71,16 @@ var myElement = document.getElementById("app")
 
 function updatePage(data){
   p(myElement, function() {
+    TweenLite.fromTo(myElement, .25, {
+        x: 200,
+        opacity: 0,
+        ease: Power1.easeInOut
+      },
+      {
+        x: 0,
+        opacity: 1
+      }
+    );
     render(data);
   });
 }
