@@ -1,0 +1,33 @@
+$font-stack: "DIN Next LT Pro", "Fira Sans", sans-serif
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  -ms-box-sizing: border-box
+  box-sizing: border-box
+
+body
+  font-family: $font-stack
+  font-size: $font-size
+  line-height: 1.55
+  font-weight: 400
+  background-color: #EBEEF5
+  color: $c-text
+
+input, textarea, button
+  font-size: $font-size
+  font-family: $font-stack
+
+.main-menu
+  padding: 1rem 3rem
+  background-color: #F3F3F3
+
+.nav-link
+  color: $c-text
+  text-decoration: none
+  font-weight: bold
+
+.nav-link + .nav-link
+  margin-left: 1rem
+
+.nav-link + .nav-link:first-child
+  margin-left: 0rem

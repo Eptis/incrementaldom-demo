@@ -1,0 +1,20 @@
+button, .btn
+  border: none
+  border-radius: $border-radius
+  background: $c-blank
+  border: 1px solid $c-light-grey
+  padding: 0.3rem 0.5rem
+  display: inline-block
+  &:focus
+    // outline: none
+  &.is-active
+    outline: none
+    border-color: $c-primary
+
+
+.btn-text
+  @extend .btn
+  border: none
+  background: none
+  &:hover, &.is-active
+    color: $c-primary

@@ -1,0 +1,103 @@
+.todos--container
+  margin: 3rem
+  max-width: 50rem
+
+.todos--list-container
+  background-color: $c-blank
+  padding: 1rem
+  box-shadow: 0px 0px 15px 0 #ccc
+
+.todos--list
+  // overflow: hidden
+
+.todos--list-item
+  cursor: pointer
+  background-color: $c-blank
+  position: relative
+  z-index: 100
+  padding: 1rem 0
+  border-bottom: 1px solid $c-light-grey
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+
+.todos--list-item-complete-btn
+  text-decoration: none
+  min-width: 1rem
+  min-height: 1rem
+
+.todos--list-item-label, .todos--list-item-edit
+  border: none
+  padding: 0
+  margin: 0
+  line-height: 1.55
+  font-weight: inherit
+  width: 100%
+  display: inline-block
+  &, &:focus
+    outline: none
+
+.todos--list-item-label
+  transition: 500ms all
+  white-space: pre
+  &.is-completed
+    text-decoration: line-through
+    color: $c-grey
+    font-style: italic
+
+.todos--new-todo
+  width: 100%
+  padding: 1rem 0
+  background: none
+  border: none
+  border-bottom: 1px solid $c-light-grey
+  &:focus
+    outline: none
+
+.todos--filter-header
+  text-align: right
+  margin-bottom: 0.5rem
+  display: flex
+  align-items: baseline
+  justify-content: space-between
+
+.todos--filters
+
+.todos--filter
+  @extend .btn-text
+  font-size: $font-size-small
+  text-transform: uppercase
+  margin-right: 0.5rem
+  &:last-child
+    margin-right: 0
+
+
+
+
+.dragable-item
+  &.is-being-dragged
+    opacity: 0
+
+.todos--list-item-actions
+  text-align: right
+  opacity: 0
+  transition: 300ms all
+
+.todos--list-item:hover .todos--list-item-actions
+  opacity: 1
+
+.todos--list-item-action
+  @extend .btn-text
+  text-align: right
+  display: block
+  font-size: $font-size-small
+  margin-left: 0.5rem
+  text-transform: uppercase
+  &:last-child
+    margin-right: 0
+
+.todos--list-item-date
+  flex: 1
+  width: 100%
+  flex-shrink: 0
+  flex-grow: 0

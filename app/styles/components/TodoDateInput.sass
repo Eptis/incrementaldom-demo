@@ -1,0 +1,62 @@
+.todo-date-input
+  text-transform: uppercase
+  display: inline-block
+  flex-shrink: 0
+  *
+    font-size: 0.8rem
+
+
+.todo-date-input--fragment
+  margin-right: 0.2rem
+  &.is-focussed
+    color: $c-highlight
+
+.todo-date-input--hour-fragment
+  @extend .todo-date-input--fragment
+  margin-right: 0rem
+
+.todo-date-input--minute-fragment
+  @extend .todo-date-input--fragment
+
+.todo-date-input--day-fragment
+  @extend .todo-date-input--fragment
+
+.todo-date-input--month-fragment
+  @extend .todo-date-input--fragment
+
+.todo-date-input--year-fragment
+  @extend .todo-date-input--fragment
+
+
+
+.todo-date-input--input
+  width: auto
+  display: inline-block
+  border: 0
+  height: 0
+  overflow: hidden
+
+.todo-date-input--input-hour-fragment
+  @extend .todo-date-input--input
+  width: 1.5em
+  text-align: center
+
+.todo-date-input--delimiter
+  margin-top: -1.2em
+  display: inline-block
+
+.todo-date-input--input-minute-fragment
+  @extend .todo-date-input--input
+  width: 1.5em
+  text-align: center
+
+.todo-date-input--input-day-fragment
+  @extend .todo-date-input--input
+  width: 5.5em
+
+.todo-date-input--input-month-fragment
+  @extend .todo-date-input--input
+  width: 5em
+
+.todo-date-input--input-year-fragment
+  @extend .todo-date-input--input
